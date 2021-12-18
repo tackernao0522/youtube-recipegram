@@ -568,7 +568,7 @@ end
 }
 
 .profile_image {
-  border-radius: 50%;
+  border-radius: 50% !important;
 }
 
 .main-image {

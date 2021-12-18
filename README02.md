@@ -107,7 +107,7 @@ end
               <div class="card-image">
                 <figure class="image">
                   <%= link_to user_path(user) do %>
-                      <%= attachment_image_tag user, :profile_image, fallback: "no-image.png" %>
+                      <%= attachment_image_tag user, :profile_image, :fill, 100, 100, fallback: "no-image.png" %>
                   <% end %>
                 </figure>
               </div>
@@ -167,7 +167,7 @@ end
         <div class="columns is-centered">
           <div class="column is-4">
             <figure class="image is-128x128"  style="margin-left: auto; margin-right: auto;">
-              <%= attachment_image_tag @user, :profile_image, fallback: "no-image.png", class: "profile_image is-rounded" %>
+              <%= attachment_image_tag @user, :profile_image, :fill, 100, 100, fallback: "no-image.png", class: "profile_image is-rounded" %>
             </figure>
           </div>
           <div class="column is-8">
